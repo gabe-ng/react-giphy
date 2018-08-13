@@ -1,0 +1,22 @@
+.result {
+    border: 1px solid black;
+}
+
+.results-p {
+    padding-top: 8px;
+}
+
+.url {
+    font-size: 16px;
+    color: black;
+}
+
+img {
+    padding-bottom: 10px;
+}
+
+.default {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
