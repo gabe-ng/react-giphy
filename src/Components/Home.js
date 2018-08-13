@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Search from './Search';
+import SearchContainer from '../Containers/SearchContainer';
 
 class Home extends Component {
 
@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div>
         <h1>Hello World</h1>
-        <Search />
+        <SearchContainer />
       </div>
     );
   }
