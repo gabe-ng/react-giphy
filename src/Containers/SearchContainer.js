@@ -8,7 +8,7 @@ class SearchContainer extends Component {
   state = {
     query: "",
     submittedSearch: false,
-    results: []
+    results: [],
   };
 
   componentDidUpdate() {
@@ -38,11 +38,12 @@ class SearchContainer extends Component {
   setQuery = e => {
     if (e) e.preventDefault();
     this.setState({
-      query: this.refs.child.refs.search.value,
+      query: this.refs.searchChild.refs.search.value,
       submittedSearch: true
     });
     console.log("updated state query and bool");
   };
+
 
   render() {
     console.log(this.state);
@@ -61,8 +62,8 @@ class SearchContainer extends Component {
             <h1 className="display-4">Let's search for Giphs!</h1>
           </div>
         </div>
-        <Search ref="child" query={this.setQuery} />
-        <Results results={this.state.results} />
+        <Search ref="searchChild" query={this.setQuery} />
+        <Results ref="responseChild" results={this.state.results} />
       </div>
     );
   }
